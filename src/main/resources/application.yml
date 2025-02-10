@@ -1,0 +1,20 @@
+server:
+  port: 8081
+  servlet:
+    context-path: /task-manager/api/v1
+spring:
+  application:
+    name: dev2TaskManager
+  main:
+    allow-bean-definition-overriding: true
+  jpa:
+    defer-datasource-initialization: 'true'
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQLDialect
+  datasource:
+    url: jdbc:mysql://localhost:3306/task_manager_db
+    username: root
+    password: 123deval
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    show-sql: true
