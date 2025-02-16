@@ -14,7 +14,6 @@ spring:
     database-platform: org.hibernate.dialect.MySQLDialect
   datasource:
     url: jdbc:mysql://localhost:3306/task_manager_db
-    username: root
-    password: 123deval
+    username: ${DATABASE_USER_NAME}
+    password: ${DATABASE_USER_PASSWORD}
     driver-class-name: com.mysql.cj.jdbc.Driver
-    show-sql: true
